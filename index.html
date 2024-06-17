@@ -8,26 +8,97 @@
 </head>
 <body>
     <header id="header">
-        <img id="header-img" />
+        <img id="logo" src="https://shop.naturespy.org/cdn/shop/files/NatureSpy-Word-Mark---Green-small.png?v=1632756734" alt="Naturespy Logo" />
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
+                <li class="nav-link"><a href="#who-we-are">Who We Are</a></li>
+                <li class="nav-link"><a href="#how-it-works">How It Works</a></li>
+                <li class="nav-link"><a href="#top-cameras">Top Cameras</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <video controls width="" id="video">
-            <source src="" />
-        </video>
+    <section id="hero">
+        <div class="hero-image">
+            <div class="hero-text">
+                <p class="hero-text-1">Conservation Through Observation</p>
+                <p class="hero-text-2">Wildlife Cameras | NATURESPY | Free Delivery</p>
+            </div>
+        </div>
     </section>
-    <section>
+    <hr />
+    <section id="who-we-are" class="grid">
+        <div id="who-we-are_img">
+            <img src="https://naturespy.org/wp-content/uploads/2023/01/s_Featured_Ursus-Cam-Set-up-Filtered-3-min.jpeg" alt="NatureSpy Camera">
+        </div>
+        <div id="who-we-are_text" class="desc-text">
+            <h3 class="desc-text">Who We Are</h3>
+            <p class="desc-text who-we-are_p">We're wildlife biologists and wildlife technology experts and our philosophy is to observe, research and showcase unique glimpses of UK and world wildlife in a non-intrusive and respectful way, and give others the skills, expertise and kit to do the same.</p>
+
+            <p class="desc-text who-we-are_p">We use the most advanced wildlife camera and trail camera tech in conservation projects all over the world, provide wildlife monitoring packages and sell the best kit we use with unparalleled support and service. But we don't want to keep your money… we're a little bit unconventional like that. We're a social enterprise and entirely not for profit -- 100% of our profits goes back to nature.</p>
+                
+            <p class="desc-text">Our goal is simple; to enable you and our wilder neighbors to live a wild life. </p>
+        </div>
+    </section>
+    <hr />
+    <section id="how-it-works" class="grid">
+        <div class="how-it-works_text desc-text">
+            <h3 class="desc-text">How It Works</h3>
+            <div class="how-it-works_item">
+                <h5 class="desc-text how-it-works_item_title">Study</h5>
+                <p class="desc-text how-it-works_item_text">We run projects & use high-end tech for wildlife research</p>
+            </div>
+            <div class="how-it-works_item">
+                <h5 class="desc-text how-it-works_item_title">Sell</h5>
+                <p class="desc-text how-it-works_item_text">Our online store offers this kit to you with all profits going to wildlife projects</p>
+            </div>
+            <div class="how-it-works_item">
+                <h5 class="desc-text how-it-works_item_title">Help</h5>
+                <p class="desc-text how-it-works_item_text">We also help wildlife organizations with surveys & equipment</p>
+            </div>
+        </div>
+        <div class="how-it-works_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CuMlmgI_q2Y?si=X4JqSyR2SIR7zvp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <hr />
+    <section id="top-cameras" class="desc-text">
+        <h3 class="desc-text">Top Cameras</h3>
+        <div class="camera-display">
+        <div class="camera">
+            <img src="https://naturespy.org/wp-content/uploads/2022/09/BrowningReconForceEliteHP5trailcameraBTC-7E-HP5mainimage_1024x1024@2x-2.webp" alt="Browning Recon Force Elite HP5" class="camera" id="browning-recon">
+            <h4 class="camera-name">Browning Recon Force Elite HP5</h4>
+            <h4 class="camera-price">£184.99</h4>
+            <button class="btn">Select</button>
+        </div>
+        <div class="camera">
+            <img src="https://naturespy.org/wp-content/uploads/2023/06/NatureSpy-WiFi-WildCam-Wildlife-Camera-main-image.webp" alt="Compare Camera
+            NatureSpy WiFi WildCam 2" class="camera" id="naturespy-wildcam2">
+            <h4 class="camera-name">NatureSpy WiFi WildCam 2</h4>
+            <h4 class="camera-price">£99.99</h4>
+            <button class="btn">Select</button>
+        </div>
+        <div class="camera">
+            <img src="https://naturespy.org/wp-content/uploads/2023/01/NatureSpy-Ursus-Trail-Camera-main-image.jpg" alt="NatureSpy Ursus" class="camera" id="naturespy-ursus">
+            <h4 class="camera-name">NatureSpy Ursus</h4>
+            <h4 class="camera-price">£104.99</h4>
+            <button class="btn">Select</button>
+        </div>
+        </div>
+    </section>
+    <section id="subscribe">
         <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-            <label for="email">Email: </label>
+            <label for="email">Subscribe to Our News: </label>
             <input type="email" id="email" name="email" placeholder="Enter your email address">
-            <input type="submit" value="Submit" id=""submit>
+            <input type="submit" value="Subscribe" id="submit">
         </form>
     </section>
+    <footer>
+        <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+        </ul>
+        <span>freeCodeCamp project | Product Landing Page | Made by Mag Z</span>
+    </footer>
 </body>
 </html>

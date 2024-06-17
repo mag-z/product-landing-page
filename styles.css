@@ -1,0 +1,295 @@
+/* The navbar should always be at the top of the viewport
+Your product landing page should have at least one media query
+Your product landing page should utilize CSS flexbox at least once */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+:root {
+    --primary-color: #002b25;
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+    min-height: 50px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 0.25rem solid #002b25;
+}
+
+#logo {
+    height: 50%;
+    max-height: 33px;
+    width: auto;
+}
+
+#nav {
+    height: 50%;
+    max-height: 100%;
+    width: auto;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+.nav-link a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 1.25px;
+    background-image: linear-gradient(to right, rgba(0, 43, 47, 0), rgba(0, 43, 47, 0.75), rgba(0, 43, 47, 0));
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(169, 169, 169, 0.5), rgba(0, 43, 47, 0.5)), url("https://www.humanesociety.org/sites/default/files/2018/07/brown-bear-in-forest_0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 42.5%;
+    left: 57.5%;
+    transform: translate (-50%, -50%);
+    color: white;
+}
+
+.hero-text-1 {
+    font-size: 48px;
+    font-family: Lora;
+    font-weight: bold;
+}
+
+.hero-text-2 {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+    margin: 20px;
+}
+
+/* #who-we-are {
+    height: 75vh;
+} */
+
+#who-we-are_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#who-we-are img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#who-we-are_text {
+    padding: 10px;
+}
+
+.who-we-are_p {
+    margin-bottom: 10px;
+}
+
+.desc-text {
+    line-height: 2;
+    vertical-align: middle;
+}
+
+.desc-text h3 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: Lora;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 12px;
+    text-decoration: underline overline var(--primary-color);
+}
+
+.desc-text p {
+    font-size: 18px;
+}
+
+/* #how-it-works {
+    height: 75vh;
+} */
+
+.how-it-works_item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 50px;
+    column-gap: 15px;
+}
+
+.how-it-works_item_title {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.how-it-works_item_text {
+    display: flex;
+    align-items: center;
+}
+
+.how-it-works_video {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    min-width: 560;
+    min-height: 315;
+}
+
+#top-cameras {
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.camera-display {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.camera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.camera img {
+    max-width: 240px;
+    max-height: 240px; 
+}
+
+.camera h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.camera button {
+    border: 0;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 7px;
+}
+
+.camera button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+#subscribe {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+#submit {
+    background-color: #f1c40f;
+    padding: 0 5px;
+}
+
+#submit:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #nav-bar ul {
+        flex-wrap: wrap;
+    }
+}
